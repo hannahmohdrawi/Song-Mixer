@@ -1,5 +1,5 @@
-
-let songsArray = ["It's Nice To Have A Friend - Taylor Swift", 
+let songsArray = [
+                "It's Nice To Have A Friend - Taylor Swift", 
                 "6 Inch - Beyonce", 
                 "Nevermind - Dennis Lloyd",
                 "Oh, Pretty Woman - Roy Orbison", 
@@ -14,10 +14,15 @@ let songsArray = ["It's Nice To Have A Friend - Taylor Swift",
 
 
 function recommend(){
-    let recommendation = getElementById("songRecommendation");
-    let genreChoice = getElementById("genre");
-    let feelingChoice = getElementById("feeling");
-    if (genreChoice == pop && feelingChoice == blissful){
-        recommendation.push(songsArray[1]);
+    let recommendation = document.getElementById("songRecommendation");
+    let genreChoice = document.getElementById("genre");
+    let feelingChoice = document.getElementById("feeling");
+    let songSelection =[];
+    if (genreChoice == "pop" && feelingChoice == "blissful"){
+        songSelection.push(songsArray[1]);
+    } else if(genreChoice == "pop" && feelingChoice == "blissful"){
+
     }
+
+    
 }
